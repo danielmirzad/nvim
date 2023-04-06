@@ -1,9 +1,9 @@
 vim.g.mapleader = " "
-vim.keymap.set("n", "<leader>pv", function ()
+vim.keymap.set("n", "<leader>nt", function ()
     require("nvim-tree.api").tree.toggle({ focus = false})
 end)
 
-vim.keymap.set("n", "<leader>nt", function ()
+vim.keymap.set("n", "<leader>pv", function ()
     require("nvim-tree.api").tree.focus()
 end)
 
