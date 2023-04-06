@@ -24,10 +24,7 @@ return require('packer').startup(function(use)
     use('mbbill/undotree')
     use('tpope/vim-fugitive')
     use('lukas-reineke/indent-blankline.nvim')
-    use {
-        'stevearc/overseer.nvim',
-        config = function() require('overseer').setup() end
-    }
+    use 'voldikss/vim-floaterm'
     use {
         'nvim-lualine/lualine.nvim',
         requires = { 'nvim-tree/nvim-web-devicons', opt = true }
