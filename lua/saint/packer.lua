@@ -13,14 +13,12 @@ return require('packer').startup(function(use)
         requires = { {'nvim-lua/plenary.nvim'} }
     }
 
-    use('rebelot/kanagawa.nvim')
     use('bluz71/vim-moonfly-colors')
 
     vim.cmd('colorscheme moonfly')
 
     use('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})
     use('ThePrimeagen/harpoon')
-    use('mhinz/vim-startify')
     use('mbbill/undotree')
     use('tpope/vim-fugitive')
     use('lukas-reineke/indent-blankline.nvim')
