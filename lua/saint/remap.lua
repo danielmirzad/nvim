@@ -7,6 +7,10 @@ vim.keymap.set("n", "<leader>pv", function ()
     require("nvim-tree.api").tree.focus()
 end)
 
+vim.keymap.set("n", "<C-o>", function ()
+    vim.cmd("FloatermToggle")
+end)
+
 vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")
 vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv")
 
