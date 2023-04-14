@@ -19,10 +19,11 @@ return require('packer').startup(function(use)
 
     use('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})
     use('ThePrimeagen/harpoon')
+    use('cdelledonne/vim-cmake')
     use('mbbill/undotree')
     use('tpope/vim-fugitive')
     use('lukas-reineke/indent-blankline.nvim')
-    use 'voldikss/vim-floaterm'
+    use('voldikss/vim-floaterm')
     use {
         'nvim-lualine/lualine.nvim',
         requires = { 'nvim-tree/nvim-web-devicons', opt = true }
@@ -33,7 +34,7 @@ return require('packer').startup(function(use)
             'nvim-tree/nvim-web-devicons', -- optional
         }
     }
-    use 'nvim-tree/nvim-web-devicons'
+    use('nvim-tree/nvim-web-devicons')
     use {'romgrk/barbar.nvim', requires = 'nvim-web-devicons'}
     use {'stevearc/dressing.nvim'}
     use {

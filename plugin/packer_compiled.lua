@@ -169,6 +169,11 @@ _G.packer_plugins = {
     path = "/home/saint/.local/share/nvim/site/pack/packer/start/undotree",
     url = "https://github.com/mbbill/undotree"
   },
+  ["vim-cmake"] = {
+    loaded = true,
+    path = "/home/saint/.local/share/nvim/site/pack/packer/start/vim-cmake",
+    url = "https://github.com/cdelledonne/vim-cmake"
+  },
   ["vim-floaterm"] = {
     loaded = true,
     path = "/home/saint/.local/share/nvim/site/pack/packer/start/vim-floaterm",
