@@ -13,6 +13,11 @@ return require('packer').startup(function(use)
         requires = { {'nvim-lua/plenary.nvim'} }
     }
 
+    -- Zig
+    use 'ziglang/zig.vim'
+    -- Rust
+    use 'simrat39/rust-tools.nvim'
+
     use('bluz71/vim-moonfly-colors')
 
     vim.cmd('colorscheme moonfly')
@@ -34,7 +39,7 @@ return require('packer').startup(function(use)
             'nvim-tree/nvim-web-devicons', -- optional
         }
     }
-    use('nvim-tree/nvim-web-devicons')
+    use 'nvim-tree/nvim-web-devicons'
     use {'romgrk/barbar.nvim', requires = 'nvim-web-devicons'}
     use {'stevearc/dressing.nvim'}
     use {
@@ -55,6 +60,6 @@ return require('packer').startup(function(use)
         {'hrsh7th/nvim-cmp'},     -- Required
         {'hrsh7th/cmp-nvim-lsp'}, -- Required
         {'L3MON4D3/LuaSnip'},     -- Required
-    }
+    },
 }
-  end)
+end)
